@@ -24,7 +24,7 @@ public class DocterPatient {
             payment +=200;
         }else if(age<=40){
             payment +=400;
-        }else{
+        }else{ 
             payment+=300;
         }
         count++;
