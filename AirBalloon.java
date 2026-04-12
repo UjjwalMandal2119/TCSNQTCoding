@@ -12,6 +12,8 @@ public class AirBalloon {
         int y=sc.nextInt();
 
         System.out.println(maxPeople(weight, y));
+        System.out.println("------------------------");
+         System.out.println(maxPeople1(weight, y));
 
     }
     public static int maxPeople(int[] w, int y){
@@ -27,5 +29,23 @@ public class AirBalloon {
         }
       }
       return count;
+    }
+    public static int maxPeople1(int[] arr , int y){
+        int sum=0;
+        int index=0;
+        int count=0;
+        int maxCap=0;
+        for(int i=0; i<arr.length; i++){
+            if(sum <=y){
+                sum+=arr[i];
+                count++;
+            }else{
+                sum-=arr[index];
+                index++;
+                count--;
+            }
+            maxCap =Math.max(maxCap, count);
+        }
+        return maxCap;
     }
 }
