@@ -5,6 +5,7 @@ class Bbc{
      int m=100;
     public Bbc() {  // it give the total object
     count++;
+    System.out.println("This is a constructor");
     }
 
   //static block execute onces , and it called before the main method
@@ -30,5 +31,7 @@ public class StaticDetails {
         Bbc A2 = new Bbc();
         Bbc A3 = new Bbc();
         Bbc.display();  //class ke name ke sath call kar sakta hu
+
+        System.out.println("out Object ko  static object bna sakte   h , jo System ke sath call ho raha h");
     }
 }
