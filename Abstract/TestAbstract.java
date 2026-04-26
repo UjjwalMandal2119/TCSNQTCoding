@@ -1,3 +1,4 @@
+package Abstract;
 abstract class Area{
     abstract void area();
 }
